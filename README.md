@@ -50,4 +50,32 @@ If you want to see when, why was created any commit, you just need type `git log
 commit 6cf871d598e6726c5c95ba75c6a863bbd0e3cb32 (HEAD -> master, origin/master)
 Author: User atase <atase@gmail.com>
 Date:   Sun Nov 19 17:03:53 2023 +0600
+
+commit 234dfsd598e6726c5c95ba75c6a863bbd0edf343
+Author: User atase <atase@gmail.com>
+Date:   Sun Nov 19 17:03:53 2023 +0600
+```
+
+**6cf871d598e6726c5c95ba75c6a863bbd0e3cb32** is a unique ID of a commit, but we call it **hash**. Hash stores the information about a commit. Hash stores when the commit was made, the contents of the files in the repository at the time of the commit, and a link to the previous, or parent, commit.
+
+The inscription **(HEAD -> master, origin/master)** says that **6cf871d598e6726c5c95ba75c6a863bbd0e3cb32** is the latest commit. HEAD is the file file that references to the refs/heads/master service file containing the hash of the last commit.
+
+
+```Author: User atase <atase@gmail.com>``` - information about the author of the commit.
+
+```Date:   Sun Nov 19 17:03:53 2023 +0600``` - date of creation of the commit.
+
+# `git status` - see a status of your commits
+
+The `git status` command always informs you about the status of a file, such as whether it has been added to the "to be committed" list, is untracked, or has been modified. `git status` explicitly shows the following states of files: untracked, staged, and modified.
+
+```
+$ touch fileA.txt
+$ git status
+On branch master
+Untracked files: # found untracked files
+  (use "git add <file>..." to include in what will be committed)
+        fileA.txt
+
+nothing added to commit but untracked files present (use "git add" to track) 
 ```
