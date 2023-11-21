@@ -33,7 +33,7 @@ To see your history of commits use `git log`. It shows your commits in reverse c
 
 To be added later...
 
-## `git push` - sends your files to remote repository
+## `git push` - send your files to remote repository
 
 If you've been working in a **local repository** (a folder on your computer), it's time to send all fruits of your labour with your colleagues. For this purpose is used a remote **repositories** that stored such platforms GitHub, GitLab, etc.
 
@@ -41,3 +41,13 @@ To send your local repo to a remote repository, we use command `git push`.
 To push your repo for the **first time** we should use `git push -u origin master`.
 
 Now you can work with **GIT**! Congratulations!
+
+## `git log` - see information about your commits
+
+If you want to see when, why was created any commit, you just need type `git log`.
+
+```
+commit 6cf871d598e6726c5c95ba75c6a863bbd0e3cb32 (HEAD -> master, origin/master)
+Author: User atase <atase@gmail.com>
+Date:   Sun Nov 19 17:03:53 2023 +0600
+```
